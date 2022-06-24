@@ -1,6 +1,6 @@
 /** @type {import('@sveltejs/kit').RequestHandler} */
-export async function get({ body, params }) {
+export async function get() {
   return {
-    body: { message: 'Hello, My SvelteKit World!!' },
+    body: {message: 'Hello, My SvelteKit World!!'},
   };
 }

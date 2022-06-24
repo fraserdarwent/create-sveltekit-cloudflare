@@ -1,0 +1,10 @@
+services:
+  yarn:
+    image: node:17
+    entrypoint: /bin/sh
+    command: ["-c","yarn && yarn dev"]
+    working_dir: /code
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/code

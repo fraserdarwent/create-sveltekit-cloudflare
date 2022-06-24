@@ -3,9 +3,9 @@
   export const prerender = true;
 
   /** @type {import('@sveltejs/kit').Load} */
-  export async function load({ fetch }) {
+  export async function load({fetch}) {
     const response = await fetch('/api/v1/example');
-    const { message } = await response.json();
+    const {message} = await response.json();
 
     return {
       props: {
